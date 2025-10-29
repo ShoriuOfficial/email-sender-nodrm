@@ -10,8 +10,7 @@ Bu layihə **Express**, **Nodemailer**, **Body-Parser** və **Path** modulların
 
 Layihəni işə salmazdan əvvəl aşağıdakı Node.js modullarını quraşdırmaq lazımdır:
 
-```bash
-npm install express nodemailer body-parser path```
+```npm install express nodemailer body-parser path```
 
 Bu əmrlə bütün zəruri asılılıqlar (node_modules) avtomatik yüklənəcək.
 

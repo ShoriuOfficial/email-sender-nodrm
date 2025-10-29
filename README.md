@@ -1,100 +1,102 @@
-# 📦 Node.js Mail Uygulaması
 
-Bu proje, **Express**, **Nodemailer**, **Body-Parser** ve **Path** modüllerini kullanarak basit bir e-posta gönderim sistemi sağlar.  
-Kod dosyaları: `app.js`, `index.html`, `package.json`
+# 📦 Node.js Poçt Tətbiqi
+
+Bu layihə **Express**, **Nodemailer**, **Body-Parser** və **Path** modullarından istifadə edərək sadə bir e-poçt göndərmə sistemi yaradır.  
+Əsas fayllar: `app.js`, `index.html`, `package.json`
 
 ---
 
-## ⚙️ Gerekli Modüller
+## ⚙️ Lazımi Modullar
 
-Projeyi çalıştırmadan önce aşağıdaki Node.js modüllerini yüklemen gerekir:
+Layihəni işə salmazdan əvvəl aşağıdakı Node.js modullarını quraşdırmaq lazımdır:
 
-bash
-npm install express nodemailer body-parser path
+```bash
+npm install express nodemailer body-parser path```
 
-Bu komut, proje için gerekli tüm bağımlılıkları (node_modules) otomatik olarak indirir.
+Bu əmrlə bütün zəruri asılılıqlar (node_modules) avtomatik yüklənəcək.
 
 
 ---
 
 🚀 Başlatma
 
-Uygulamayı başlatmak için:
+Tətbiqi işə salmaq üçün:
 
 node app.js
 
-veya (varsa Başlat.lnk dosyasını çift tıklayarak da çalıştırabilirsin).
+və ya (əgər varsa) Başlat.lnk faylını iki dəfə klikləməklə də başlada bilərsən.
 
-Tarayıcıdan şu adrese git:
+Sonra brauzerdə bu ünvana daxil ol:
 
 http://localhost:3000
 
 
 ---
 
-🧩 Modül Bilgileri
+🧩 Modul Məlumatı
 
-Modül	Görev
+Modul	Vəzifə
 
-express	Sunucu kurmak ve HTTP isteklerini yönetmek
-nodemailer	E-posta gönderimi için SMTP bağlantısı kurar
-body-parser	Form verilerini yakalar (POST request'lerde)
-path	Dosya ve klasör yollarını yönetir (örn. index.html’e yönlendirme)
+express	Server qurmaq və HTTP sorğularını idarə etmək
+nodemailer	SMTP vasitəsilə e-poçt göndərmək üçün istifadə olunur
+body-parser	Form məlumatlarını oxumaq (POST sorğularında)
+path	Fayl və qovluq yollarını idarə edir (məs: index.html-ə yönləndirmə)
 
 
 
 ---
 
-📁 Dosya Yapısı
+📁 Fayl Quruluşu
 
 Files/
-├── node_modules/       # Yüklenen modüller (otomatik oluşturulur)
-├── files/              # Ek veriler veya statik dosyalar
-├── app.js              # Ana sunucu dosyası
-├── index.html          # Arayüz (form veya sayfa)
-├── package.json        # Proje yapılandırması
-├── package-lock.json   # Modül versiyon kilidi
-├── README.md           # Bu dosya 🙂
-└── .gitignore          # Git için hariç tutulan dosyalar
+├── node_modules/       # Quraşdırılmış modullar (avtomatik yaranır)
+├── files/              # Əlavə məlumatlar və ya statik fayllar
+├── app.js              # Əsas server faylı
+├── index.html          # İstifadəçi interfeysi
+├── port.exe            # Port açmaq üçün vacib
+ (form və ya səhifə)
+├── package.json        # Layihənin konfiqurasiya faylı
+├── package-lock.json   # Modul versiya kilidi
+├── README.md           # Bu sənəd 🙂
+└── 
 
 
 ---
 
-✉️ E-posta Gönderimi
+✉️ E-poçt Göndərilməsi
 
-app.js içinde SMTP ayarlarını güncelle:
+app.js daxilində SMTP ayarlarını yenilə:
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
   secure: false,
   auth: {
-    user: "seninmail@ornek.com",
-    pass: "uygulama_şifren"
+    user: "səninmail@ornek.com",
+    pass: "tətbiq_şifrən"
   }
 });
 
-> ⚠️ Gmail kullanıyorsan, “Uygulama şifresi” oluşturmalısın. Normal şifre çalışmaz.
+> ⚠️ Əgər Gmail istifadə edirsənsə, “Tətbiq üçün şifrə” yaratmalısan. Adi hesab şifrəsi işləmir.
 
 
 
 
 ---
 
-🔒 Notlar
+🔒 Qeydlər
 
-.env dosyası kullanarak e-posta bilgilerini gizleyebilirsin.
+E-poçt məlumatlarını gizlətmək üçün .env faylından istifadə edə bilərsən.
 
-node_modules Git’e yüklenmez (.gitignore içinde hariç tutulmalı).
+node_modules Git deposuna yüklənmir (.gitignore daxilində istisna edilir).
 
-Portu değiştirmek istersen app.js içinde app.listen(3000) kısmını düzenle.
-
+Portu dəyişmək üçün app.js faylındakı app.listen(3000) sətrini düzəlt.
 
 
 ---
 
-👤 Yazar
+👤 Müəllif
 
 ShoriuLegend (Ender)
 
-> Node.js • Express • SMTP • HTML • Güvenlik dostu yapı 😎
+> Node.js • Express • SMTP • HTML • Təhlükəsiz və səliqəli quruluş 😎

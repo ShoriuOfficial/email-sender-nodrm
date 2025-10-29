@@ -59,7 +59,6 @@ Files/
 ├── README.md           # Bu sənəd 🙂
 └── 
 
-
 ---
 
 ✉️ E-poçt Göndərilməsi

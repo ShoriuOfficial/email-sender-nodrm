@@ -10,7 +10,7 @@ Bu layihə **Express**, **Nodemailer**, **Body-Parser** və **Path** modulların
 
 Layihəni işə salmazdan əvvəl aşağıdakı Node.js modullarını quraşdırmaq lazımdır:
 
-```npm install express nodemailer body-parser path```
+- ```npm install express nodemailer body-parser path```
 
 Bu əmrlə bütün zəruri asılılıqlar (node_modules) avtomatik yüklənəcək.
 
@@ -21,7 +21,7 @@ Bu əmrlə bütün zəruri asılılıqlar (node_modules) avtomatik yüklənəcə
 
 Tətbiqi işə salmaq üçün:
 
-node app.js
+- ```node app.js```
 
 və ya (əgər varsa) Başlat.lnk faylını iki dəfə klikləməklə də başlada bilərsən.
 
@@ -36,10 +36,10 @@ http://localhost:3000
 
 Modul	Vəzifə
 
-express	Server qurmaq və HTTP sorğularını idarə etmək
-nodemailer	SMTP vasitəsilə e-poçt göndərmək üçün istifadə olunur
-body-parser	Form məlumatlarını oxumaq (POST sorğularında)
-path	Fayl və qovluq yollarını idarə edir (məs: index.html-ə yönləndirmə)
+express  	Server qurmaq və HTTP sorğularını idarə etmək
+nodemailer  	SMTP vasitəsilə e-poçt göndərmək üçün istifadə olunur
+body-parser  	Form məlumatlarını oxumaq (POST sorğularında)
+path	  	Fayl və qovluq yollarını idarə edir (məs: index.html-ə yönləndirmə)
 
 
 
